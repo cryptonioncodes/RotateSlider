@@ -1,0 +1,194 @@
+section.rotate-section {
+       height: 100vh;
+       overflow: hidden;
+}
+
+.rotating-slider {
+       left: 50%;
+       position: relative;
+}
+
+.rotating-slider {
+       max-width: 0 auto;
+}
+
+.rotating-slider ul.slides li {
+
+       list-style: none;
+
+       position: absolute;
+
+       top: 0;
+
+       left: 50%;
+
+       text-align: center;
+
+       transform-origin: bottom center;
+
+       width: 900px !important;
+
+       height: 550px !important;
+
+       padding: 0px !important;
+
+       clip-path: unset !important;
+
+       transition: all 0.5s ease;
+}
+
+.slider-wrapper {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 100%;
+}
+
+.slider-image {
+       width: 60%;
+}
+
+.slider-image img {
+       width: 100%;
+}
+
+.slider-content {
+       width: 40%;
+       padding-left: 40px;
+}
+
+.slider-content h3 {
+       font-size: 20px;
+       font-weight: 600;
+       color: #00D78F;
+       text-align: left;
+}
+
+.slider-content h2 {
+       font-size: 70px;
+       text-align: left;
+       font-weight: 600;
+}
+
+.rotating-slider ul.slides li .wrapper-in {
+       position: relative;
+       width: 100%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border-radius: 100%;
+       overflow: hidden;
+}
+
+.rotating-slider ul.slides li.previous-slide .wrapper-in,
+.rotating-slider ul.slides li.next-slide .wrapper-in {}
+
+.rotating-slider ul.slides li.previous-slide .wrapper-in::before {
+       content: '';
+       position: absolute;
+       height: 100%;
+       width: 100%;
+       top: 0;
+       left: 0;
+       z-index: 1;
+       background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 65%, rgba(0, 0, 0, 0) 100%);
+       background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 650%, rgba(0, 0, 0, 0) 100%);
+       background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 65%, rgba(0, 0, 0, 0) 100%);
+       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000', GradientType=0);
+}
+
+.rotating-slider ul.slides li.next-slide .wrapper-in::before {
+       content: '';
+       position: absolute;
+       height: 100%;
+       width: 100%;
+       top: 0;
+       left: 0;
+       z-index: 1;
+       background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 65%, rgba(0, 0, 0, 0) 100%);
+       background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 650%, rgba(0, 0, 0, 0) 100%);
+       background: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 65%, rgba(0, 0, 0, 0) 100%);
+       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000', GradientType=0);
+}
+
+.rotating-slider ul.slides li.previous-slide,
+.rotating-slider ul.slides li.next-slide {
+
+       /*     opacity: 0.4; */
+}
+
+.rotating-slider ul.slides li.previous-slide .inner,
+.rotating-slider ul.slides li.next-slide .inner {
+       /* 	opacity: 0.4; */
+}
+
+.rotating-slider ul.slides li.previous-slide .inner .counter,
+.rotating-slider ul.slides li.next-slide .inner .counter {
+       color: rgb(62 62 63 / 60%);
+}
+
+.rotating-slider ul.slides li .counter {
+       color: rgb(62 62 63 / 5%);
+       font-family: 'Gotham Rounded';
+       font-size: 200px;
+       font-weight: 300;
+       letter-spacing: -10px;
+       position: absolute;
+       left: 0;
+       right: 0;
+       margin: 0 auto;
+       top: 20%;
+       z-index: -1;
+}
+
+.rotating-slider ul.slides li .inner {
+       padding: 75px 75px 0;
+}
+
+.rotating-slider ul.slides li .title {
+       color: #fff;
+       font-family: 'Sofia Pro Medium';
+       font-size: 35px;
+       margin-bottom: 50px;
+       font-weight: 500;
+}
+
+.rotating-slider ul.slides li .content {
+       color: #fff;
+       font-family: 'Sofia Pro Medium';
+       font-size: 20px;
+}
+
+.rotating-slider ul.direction-controls li.left-arrow {
+       right: 90%;
+}
+
+.rotating-slider ul.direction-controls li.right-arrow {
+       left: 90%;
+}
+
+.rotating-slider ul.direction-controls li.left-arrow button {
+       background: url(https://staging.leenspace.com/wp-content/uploads/2022/12/Play-Left.png) !important;
+       width: 100px;
+       height: 100px;
+       background-size: contain !important;
+       background-repeat: no-repeat !important;
+       color: transparent;
+       outline: none;
+}
+
+.rotating-slider ul.direction-controls li.right-arrow button {
+       background: url(https://staging.leenspace.com/wp-content/uploads/2022/12/Play-Right.png) !important;
+       width: 100px;
+       height: 100px;
+       background-size: contain !important;
+       background-repeat: no-repeat !important;
+       color: transparent;
+       outline: none;
+}
+
+div.rotating-slider ul.slides {
+       border-radius: 0;
+       top: 0 !important;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+       <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+       <section class="rotate-section">
+              <div class="container">
+                     <div class="row">
+                            <div class="col-md-12">
+                                   <div class="rotating-slider">
+                                          <ul class="slides">
+                                                 <li>
+                                                        <div class="slider-wrapper">
+                                                               <div class="slider-image">
+                                                                      <img
+                                                                             src="http://199.250.201.124/~shedtech/wp-content/uploads/2023/08/image-2.png" />
+                                                               </div>
+                                                               <div class="slider-content">
+                                                                      <h3>PROUD INVENTION</h3>
+                                                                      <h2>Micro
+                                                                             Turbine</h2>
+                                                               </div>
+                                                        </div>
+                                                 </li>
+                                                 <li>
+                                                        <div class="slider-wrapper">
+                                                               <div class="slider-image">
+                                                                      <img
+                                                                             src="http://199.250.201.124/~shedtech/wp-content/uploads/2023/08/image-3.png" />
+                                                               </div>
+                                                               <div class="slider-content">
+                                                                      <h3>PROUD INVENTION</h3>
+                                                                      <h2>Vertical
+                                                                             Windmill</h2>
+                                                               </div>
+                                                        </div>
+                                                 </li>
+                                                 <li>
+                                                        <div class="slider-wrapper">
+                                                               <div class="slider-image">
+                                                                      <img
+                                                                             src="http://199.250.201.124/~shedtech/wp-content/uploads/2023/08/image-4.png" />
+                                                               </div>
+                                                               <div class="slider-content">
+                                                                      <h3>PROUD INVENTION</h3>
+                                                                      <h2>Solar
+                                                                             Cooker</h2>
+                                                               </div>
+                                                        </div>
+                                                 </li>
+                                                 <li>
+                                                        <div class="slider-wrapper">
+                                                               <div class="slider-image">
+                                                                      <img
+                                                                             src="http://199.250.201.124/~shedtech/wp-content/uploads/2023/08/image-5.png" />
+                                                               </div>
+                                                               <div class="slider-content">
+                                                                      <h3>PROUD INVENTION</h3>
+                                                                      <h2>Telescope
+                                                                             as Service</h2>
+                                                               </div>
+                                                        </div>
+                                                 </li>
+                                                 <li>
+                                                        <div class="slider-wrapper">
+                                                               <div class="slider-image">
+                                                                      <img
+                                                                             src="http://199.250.201.124/~shedtech/wp-content/uploads/2023/08/image-1.png" />
+                                                               </div>
+                                                               <div class="slider-content">
+                                                                      <h3>PROUD INVENTION</h3>
+                                                                      <h2>Solar Power Steam Engine</h2>
+                                                               </div>
+                                                        </div>
+                                                 </li>
+
+                                          </ul>
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+       </section>
+
+
+
+
+
+
+
+
+
+
+
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+       <script src="rotate.js"></script>
+       <script>
+              (function ($) {
+                     $('.rotating-slider').rotatingSlider({
+                            slideHeight: Math.min(600, window.innerWidth - 80),
+                            slideWidth: Math.min(600, window.innerWidth - 80),
+                            draggable: false,
+                            autoRotate: true
+                     });
+              })(jQuery)
+
+       </script>
+</body>
+
+</html>
